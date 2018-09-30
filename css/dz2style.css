@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+  }
+  /* TOPBAR */
+  .top-bar{
+      width: 1200px;
+      height: 30px;
+      border: 1px solid #000;
+      background: rgb(200, 197, 197);
+      margin: 0px auto;
+  }
+  
+  .item-l{
+      padding: 3px;
+  }
+  .nav-top{
+     display: inline-block;
+    position: relative;
+    width: 42%;
+  }
+
+  .list-top {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 3px;
+  }
+  
+  .text{
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 13px;
+
+  }
+
+  .logo-head{
+      width: 120px;
+      height: 48px;
+      
+  }
+  .item{
+    padding: 2px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .item:before, .item:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width .2s linear;
+  }
+  
+  .item:before {
+    left: 50%;
+  }
+  
+  .item:after {
+    right: 50%;
+  }
+  
+  .item:hover:before, .item:hover:after {
+    width: 50%;
+  }
+  /* TOPBAR */
+  /* HEADER */
+  header{
+    width: 1200px;
+    height: 50px;
+    border: 1px solid #000;
+    margin: 0px auto;
+  }
+
+  .nav-head-logo, .nav-head-list, .nav-head-serch{
+      display: inline-block;
+      position: relative;
+  }
+
+  .linc-hed {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 5px;
+  }
+
+  .text-head{
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 13px;    
+    }
+
+.clic{
+    width: 20px;
+      height: 20px;
+}
+.nav-head-logo{
+    width: 20%;
+}
+.nav-head-list{
+    width:48%;
+    top:-48%
+}
+.nav-head-serch{
+    width:30%;
+    top:-20%;
+}
+
+.search-form, .login, .registry{
+    display: inline-block;
+      position: relative;
+}
+
+.login, .registry{
+    border: 1px solid #000;
+    width: auto;
+    height: 25px;
+    top: -5px;
+}
+
+.text-login, .registry-text{
+    text-decoration: none;
+    margin: 5px;
+    font-size: 13px; 
+    
+}
+
+
+.list-head{
+    padding: 2px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .list-head:before, .list-head:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 5px;
+    background: red;
+    transition: height .2s linear;
+  }
+  
+   
+  .list-head:hover:before, .list-head:hover:after {
+    height: 100%;
+  }
+
+  
+/* HEDER */
+
+/* ASIDE */
+aside{
+    width: 300px;
+    margin-left:auto ;
+    margin-top: 40px;
+    
+}
+.aside-index{
+    margin: 0 34px;
+    border: 1px solid #000;
+    display: inline-block;
+    position: relative;
+    transition: color 1s linear, width 2s linear;
+    overflow: hidden;
+    }
+
+.aside-like, .aside-read{
+    display: inline-block;
+    position: relative;
+}
+.read, .like{
+    width: 35px;
+    height: 30px;
+    margin: 2px;
+}
+.aside-text{
+    margin-top: 10px;
+   
+}
+.text-aside{
+    text-decoration: none;
+    list-style: none;
+    color:#000;
+}
+
+
+
+.aside-index:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: -100%;
+    left:-100%;
+}
+.aside-index:hover:before{
+    left: 0;
+    top:0;
+}
+
+/* ASIDE */
+/* Main */
+.main{
+    width: 600px;
+    margin:auto ;
+    top: 0px;
+    text-align: center;
+    
+}
+.carde-img{
+    width: 100%;
+    height: 100%;
+}
+.card-img{
+    width: 450px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 5px 3px 25px rgba(0,0,0,1);
+    overflow: hidden;     
+}
+.card-img:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(75, 72, 72, 0.2);
+    position: absolute;
+    top: -100%;
+    left:-100%;
+}
+.card-img:hover:before{
+    left: 0;
+    top:0;
+}
+
+
+/* Main */
+/* inside */
+.inside{
+
+    width: 300px;
+    margin-right:auto ;
+    margin-top: 40px;
+}
+.photo, .name{
+    display: inline-block;
+}
+
+.you-photo{
+    width:50px;
+    height: 50px;
+}
+
+.lick-naws{
+    border: 1px solid #000;
+    display: inline-block;
+    margin: 0;
+    width: 290px;
+    position: relative;
+    transition: color 1s linear, width 2s linear;
+    overflow: hidden;
+}
+
+.lick-naws:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(50,150,0,.5);
+    position: absolute;
+    top: -100%;
+    left:-100%;
+}
+.lick-naws:hover:before{
+    left: 0;
+    top:0;
+}
+
+/* inside */
+/* intool */
+.inside, .main, .aside{
+    display: inline-block;
+    /* border: 1px solid #000; */
+    vertical-align: top;
+}
+.maining{
+    /* border: 1px solid #000; */
+
+}
+
+/* intool */
